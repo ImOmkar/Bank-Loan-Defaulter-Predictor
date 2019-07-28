@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <title>Loan-Default-Prediction App</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {color:darkslategray;}
+*{
+    box-sizing: border-box;
+    }
+    
+body{
+    height: 100%;
+    font-family: verdana;
+    background-image: url("./static/bg_home1.jpg");
+    background-color: transparent;
+    }
+
+
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    max-width: 100px;
+    padding: 5px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 15%;
+    height:30%;
+    padding: 5px 5px;
+    margin: 1px 0 1px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f1f1f1;
+    font-family: verdana;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+    .abc{
+        margin-bottom:260px;
+        
+
+    }
+    .bg_img{
+        background-color:white;
+    }
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    font-family: verdana;
+    border: none;
+    cursor: pointer;
+    width: 6%;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+
+<div align="center">
+<h1 style="font-family:verdana; color: white;font-size:400%">Loan Default Prediction System</h1>
+</div>
+    
+<body>
+<div>
+    
+ <form action = "/getdelay" method="POST">
+   <div align="center">
+    <p>
+        <b><font size="5" color='white'>Member_ID :</font></b><br><br>
+        <input type="text" name="member_id_input" placeholder="Enter Member_id here" style="font-size : 20px; width: 20%; height: 405;"></p><br>
+       
+        <p><button type="submit" class="btn" style="font-size : 20px; width: 10%; height: 30%;" onclick="myFunction()">Submit</button></p>
+		<p id="load"  style="font-family:verdana; color: white;font-size= 15px"></p>
+   </div>
+ </form>
+ 
+ 
+ <div class="abc" align="center">
+ 
+    <button id="myButton" align="center" class="btn" style="font-size : 20px; width: 10%; height: 30%; " onclick="document.getElementById('down').scrollIntoView();">Graphical view</button></div>
+	
+	<div id="down" align="center" class="bg_img"><br><br>
+	
+		<p  align="center" style="color:Red;font-size:25px;font-weight:bold;">Graphical Representation</p>
+        <img src="{{ url_for('static', filename='imp_f.png') }}" width="500" height="500">
+		<p style="font-family:Arial">0 :emp_length
+		1 :loan_amnt
+		2 :funded_amnt
+		3 :funded_amnt_inv
+		4 :sub_grade
+		5 :int_rate<br>
+		6 :annual_inc
+		7 :dti
+		8 :mths_since_last_delinq
+		9 :open_acc
+		10 :revol_bal
+		11 :revol_util<br>
+		12 :total_acc
+		13 :total_rec_int
+		14 :total_rec_late_fee
+		15 :mths_since_last_major_derog<br>
+		16 :last_week_pay
+		17 :tot_cur_bal
+		18 :total_rev_hi_lim
+		19 :recoveries
+		20 :term
+		21 :loan_to_income<br>
+		22 :avl_lines
+		23 :int_paid
+		24 :emi_paid_progress_perc
+		25 :total_repayment_progress
+		</p><br>
+		<img src="{{ url_for('static', filename='prediction_bar1.png') }}" width="700" height="500">
+		
+	</div> 
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("load").innerHTML = "Processing...";
+}
+</script>
+</body>
+</html>
+
+
+
+  
+
+  
+  
+  
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Loan-Default-Prediction App</title>
+<head>
+<style>
+h1 {color:darkslategray;}
+</style>
+</head>
+
+<div align="center">
+<h1 style="font-family:verdana;">Loan Default Prediction System</h1>
+</div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image:url("C:/Users/adity/Example1/example/venv/static/bg_home.jpg");
+
+    min-height: 50px;
+
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    max-width: 100px;
+    padding: 5px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 20%;
+    padding: 5px 5px;
+    margin: 1px 0 1px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 6%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="bg-img">
+ <form action = "/getdelay" method="POST">
+   <div align="leftr">
+   <p><b>Member_ID:<input type="text" name="member_id_input"></b></p>
+    
+ <form action = "/getdelay" method="GET">
+   <div align="right">
+   <p><b>Member_ID:<input type="text" name="member_id_input"></b></p> 
+   <p><b>Loan Amount:<input type="text" name="loan_amnt"></b></p>
+   <p><b>Interest Rate(%):<input type="text" name="int_rate"></b></p>
+   <p><b>Annual Income:<input type="text" name="annual_inc"></b></p>
+   <p><button type="submit" class="btn">Submit</button></p>
+ </form>
+
+
+</body>
+</html>
+
+
+
+  
+
+  
+  
+  
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
