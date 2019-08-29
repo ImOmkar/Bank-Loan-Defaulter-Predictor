@@ -2,15 +2,15 @@
 
 Python libraries that used in Machine Learning are:
 
-Numpy
-Scipy
-Scikit-learn
-Theano
-TensorFlow
-Keras
-PyTorch
-Pandas
-Matplotlib
+Numpy,
+Scipy,
+Scikit-learn,
+Theano,
+TensorFlow,
+Keras,
+PyTorch,
+Pandas,
+Matplotlib.
 
 Machine learning is a field of computer science that gives computers the ability to learn without being programmed explicitly. The power of machine learning is that you can determine how to differentiate using models, rather than using human judgment. The basic steps that lead to machine learning and will teach you how it works are described below in a big picture:
 
