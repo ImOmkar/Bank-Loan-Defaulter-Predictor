@@ -1,6 +1,6 @@
 # Bank-Loan-Defaulter-Predictor
 
-ython libraries that used in Machine Learning are:
+Python libraries that used in Machine Learning are:
 
 Numpy
 Scipy
