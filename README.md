@@ -1,6 +1,6 @@
 # Bank-Loan-Defaulter-Predictor
 
-Today, Python is one of the most popular programming languages for this task and it has replaced many languages in the industry, one of the reason is its vast collection of libraries. Python libraries that used in Machine Learning are:
+ython libraries that used in Machine Learning are:
 
 Numpy
 Scipy
